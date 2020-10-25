@@ -1,0 +1,116 @@
+<?php
+
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#magalerie language_file
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+define('_IMG_COMMENT', 'commentaires: ');
+//define("_SHOWMAX","Taille maxi d'affichage de la grande image ");
+//define("_SHOWMAX_EX","(Ex: 750 pour un affichage de 1024x768) ");
+//define("_NBVIGN","nombre de vignettes par page:");
+define('_CONF', 'Configuration de magalerie');
+//define("_NBPPAGE","nombre de colonnes par page:");
+define('_DEFDESC', "Description par defaut (lors de l'insertion d'images par lot) (NULL=aucun affichage)");
+//define("_UPFILE","Autoriser l'upload:");
+//define("_ANONPOST","Autoriser les anonymes a utiliser toutes les options de magalerie");
+//define("_MAXUP","Poid maximum des images upload&eacute;es:");
+define('_SOIT', 'soit');
+//define("_MAXLARG","Largeur max de la vignette:");
+//define("_MAXLARG","Largeur max de la vignette:");
+//define("_CARDPOST","Autoriser l'envoie de cartes virtuelles:");
+define('_COMENTPOST', 'Autoriser les commentaires:');
+define('_WARNINNOTWRITEABLE', 'ATTENTION:');
+define('_2WARNINNOTWRITEABLE', " n'est pas ouvert en &eacute;criture.<br>Changez les permissions!");
+define('_NEWIMAGE', 'Ajouter une (des) Nouvelle(s) images(s)');
+define('_NEWREP', 'Ajouter un (des) Nouveau(x) r&eacute;pertoire(s)');
+define('_NEWSOUSREP', 'Ajouter un (des) Nouveau(x) sous-r&eacute;pertoire(s)');
+define('_NEWREPSOUSCAT', 'Ajouter une (des) Nouvelle(s) Sous-cat&eacute;gorie(s)');
+//define("_ADD","Ajouter");
+define('_CONFDEL', 'Voulez-vous effacer limage id:');
+define('_GARDE', "Attention! Ceci effacera l'entr&eacute;e dans la base sql, l'image, ainsi que la vignette -ppm et les commentaires correspondants");
+define('_NOOPREP', "Aucune op&eacute;ration, aucun nouveau r&eacute;pertoire n'a &eacute;t&eacute; d&eacute;tect&eacute;.");
+define('_IMGOK', "L'images <b></b> a &eacute;t&eacute; ajout&eacute;e a la galerie ");
+define('_REPOK', ' a &eacute;t&eacute; ajout&eacute; comme catégorie a la galerie');
+define('_NBF', 'Nombre de fichier par page');
+define('_NOIMG', "Aucune nouvelle image n'a &eacute;t&eacute; d&eacute;tect&eacute;e dans la cat&eacute;gorie <b></b>");
+define('_YESIMG', ' a &eacute;t&eacute; ajout&eacute;e a la galerie ');
+define('_EDIMG', 'Editer une image:');
+define('_ID', 'ID');
+define('_NOM', 'nom');
+define('_MAIL', 'email');
+define('_CAT', 'categorie');
+//define("_TITLE","titre");
+define('_IMG', 'image');
+define('_DESCRIP', 'description');
+define('_HITS', 'clics');
+define('_VOT', 'votes');
+define('_NOT', 'note');
+define('_VISIB', 'valid&eacute;e');
+define('_SEE', 'voir');
+define('_DIT', 'editer');
+define('_SUPP', 'supprimer');
+define('_RESULT', 'dans la cat&eacute;gorie');
+define('_NBT', 'La galerie contient');
+define('_PLURIEL1', 's');
+define('_ATTENTE', 'en attente');
+define('_MD_SORTBY', 'Tri&eacute; par:');
+define('_MD_DATE', 'Date');
+define('_MD_POPULARITY', 'Popularit&eacute;');
+define('_MD_CURSORTEDBY', 'Actuellement tri&eacute;s par: %s');
+define('_MD_POPULARITYLTOM', 'Popularit&eacute; (du - au + visit&eacute;)');
+define('_MD_POPULARITYMTOL', 'Popularit&eacute; (du + au - visit&eacute;)');
+define('_MD_TITLEATOZ', 'Titre (A &agrave; Z)');
+define('_MD_TITLEZTOA', 'Titre (Z &agrave; A)');
+define('_MD_DATEOLD', 'Date (Les plus anciens en premier)');
+define('_MD_DATENEW', 'Date (Les plus r&eacute;cents en premier)');
+define('_MD_RATINGLTOH', 'Note (du - au + c&ocirc;t&eacute;)');
+define('_MD_RATINGHTOL', 'Note (du + au - c&ocirc;t&eacute;)');
+define('_MD_RATING', 'Note');
+define('_RATING', 'Vote');
+//define("_MIDI","Autoriser l'ouverture des popups");
+define('_AD_MA_EDITIMGTXT1', 'Une erreur est survenue,');
+define('_AD_MA_EDITERRORTXT1', "impossible d'ex&eacute;cuter la requete.");
+define('_BBCODE', 'Si commentaires autoris&eacute;s, autoriser les BBCode');
+define('_HTML', 'Si commentaires autoris&eacute;s, autoriser le HTML');
+define('_SMILE', 'Si commentaires autoris&eacute;s, autoriser les SMILIES');
+//define("_SENDMAIL","Activer la fonction sendmail");
+define('_VALIDEMAIL', 'Envoyer un courriel de confirmation.');
+define('_GALIMG', "Galerie d'image");
+define('_NEW_IMG_COMENT', "Limage que vous nous avez proposé a l'url suivante:\n" . XOOPS_URL . "/modules/magalerie/ a été approuvée.\n\nVotre image est maintenant visible a cette adresse: ");
+define('_CONTEST', "Si toutefois, ni vous ni une personne de votre entourage n'avez tranmis ce fichier et qu'il sagissait d'une erreur,");
+define('_IFERREUR', " veuillez nous prévenir en répondant a ce courrier.\n\nMerci pour votre participation.");
+define('_NBCOMPPAGE', 'Nombre de commentaires par page');
+define('_MENUCONF', 'Configuration des options');
+define('_OPSUPP', 'Options supplémentaires');
+define('_CONFCOMM', 'Configuration des commentaires');
+define('_CHOICAT', 'Choisissez une catégorie!');
+define('_PREC', 'Pr&eacute;c&eacute;dente');
+define('_SUIV', 'Suivante');
+//define("_LISTCAT","Afficher la liste déroulante (navigation galerie.php)");
+//define("_NAVIGCAT","Afficher le menu standard (navigation galerie.php)");
+define('_CHOIXCAT', 'Liste des cat&eacute;gories');
+define('_MOVECAT', 'Déplacer vers');
+define('_MODULE', 'Module magalerie');
+define('_EDITCAT', 'Editer une cat&eacute;gorie:');
+define('_NOTIFICATION', 'Notification');
+
+define('MG_ADMIN', 'Magalerie administration');
+define('MG_LISTIMG', 'Lister les images');
+//define("MG_EDITCAT","eng Editer les catégories");
+define('MG_EDITIMG', 'Editer une image');
+define('MG_CONFIG', 'Configuration');
+define('MG_ADD_ELEMENT', 'Ajouter des &eacute;l&eacute;ments');
+define('MG_CONFIGMAJ', 'Le fichier de configuration est mis a jour!');
+//redirection de listing.php
+define('MG_MAJ', 'mis a jour!');
+//define("_CHOIX_PROG","Choix du programme utilis&eacute; pour la cr&eacute;ation des vignettes");
+//define("_IF_MAGICK","Si ImageMagick, chemin de l'&eacute;x&eacute;cutable");
+//define("_COMFIRMUP","Confirmer la validation des uploads automatiquement");
+
+define('_MAG-BLOC_CC', 'Magelarie bloc-center_centre');
+define('MAG-BLOC_S', 'Magelarie bloc-simple');
+
+define('_C_SUR', "Etes vous certain de vouloir supprimer cette entr&eacute;e de la base.<br> Vous devrez alors supprimer le dossier de la galerie et toutes les images qu'il contient manuellement");
+define('_CAUSE_CAT', 'En fonction de la catégorie principale.');
+define('_DELETE_CAT', 'Effacer cette catégorie');
+define('_ALEASELECT', 'Sélection aleatoire');

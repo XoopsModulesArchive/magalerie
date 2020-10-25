@@ -1,0 +1,49 @@
+<{if $colonne == 1}>
+<td style="vertical-align: top; padding: 0px;">
+<{/if}>
+
+<{if $colonne ==2}>
+<td width="50%" style="vertical-align: top; padding: 0px;">
+<{/if}>
+
+<{if $colonne == '3'}>
+<td width="33%" align="right" style="vertical-align: top; padding: 0px;">
+<{/if}>
+
+<!--
+debut de la partie skinable
+// -->
+
+<table width="100%" style="border: 1px solid silver; margin: 0px;">
+<tr>
+<td align="center" rowspan="3" style="vertical-align: middle"><{$done.image}></td>
+<td height="25" align="right" style="vertical-align: middle">
+
+
+<{$done.editer}>
+
+<{$done.if_new}><{$done.imgrank}></td>
+</tr><tr>
+<td style="vertical-align: top">
+<{$done.date}><br>
+<{$done.postername}><br>
+<{$done.description}>
+</td></tr><tr>
+<td style=" vertical-align: bottom;">
+<div align="right"><{$done.nomb_clic}>
+&nbsp; <{$done.comments}>
+<div>
+</td>
+</tr>
+</table>
+
+<!--
+fin de la partie skinable
+// -->
+
+<br>
+</td>
+<{if $done.themecount == $colonne}>
+</tr><tr>
+<{else}><td>&nbsp;&nbsp;</td>
+<{/if}>

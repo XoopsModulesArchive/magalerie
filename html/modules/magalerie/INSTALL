@@ -1,0 +1,66 @@
+##################################################################################
+# Magalerie Version 1.4                                                         #                                                                                #
+# dernière modification: 25/09/2002                				 #
+# Scripts Home:                 http://www.lespace.org                           #              							                 #                                                                              #
+# auteur           :            bidou                                            #
+# émail            :            bidou@lespace.org                                #
+# Site web         :		http://www.lespace.org                           #
+# licence          :            Gpl                                              #
+##################################################################################
+
+
+Pour faire fonctionner ce module.
+
+Décompressez l'archive magalerie-1.02b.zip ou magalerie-1.02b.tar.gz et transférer le
+dossier /magalerie dans le répertoire /modules de votre site xoop.
+
+Appliquez les droits en écriture suivants:
+	/magalerie/cache		chmod 777
+	/magalerie/cache/config.php	chmod 666
+	/magalerie/galerie		chmod 777
+	/magalerie/galerie/*		chmod 777
+
+*représente tout les dossiers de catégorie
+	
+Installer le module via l'admin de votre site. Ce module fonctionne actuellement sans système de template.
+Pour ajouter des images et des catégories a la galerie, transférer vos répertoires de catégories
+avec les images qu'ils contiennent avec votre client ftp préféré dans le répertoire modules/magalerie/galerie
+et pensez a chmoder vos catégories.
+L'insertion dans la base de donnée est automatique. En vous rendant vers admin/maglerie insertion automatique.
+
+Pour la première utilisation cliquer deux fois sur "Ajouter un (des) Nouveau(x) répertoire(s)" pour actualiser.
+
+
+IMPORTANT! si les vignettes creer sont grises renommer les fichiers:
+
+racine/modules/magalerie/functions.php en racine/modules/magalerie/functions.php-old
+et
+racine/modules/magalerie/functions.php.dist en racine/modules/magalerie/functions.php
+
+ensuite désinstaller et réinstaller le module et reprendre les opérations.
+
+.............
+
+Mise a jour depuis la version 1.2, 1.3
+
+Conservation des bases prédentes.
+Si le module a été désactivé lors de l'instalation de xoop 2, remplacer les fichiers et cliquez sur actualiser le module
+puis réactivez-le.
+
+Si le module n'a pas été désactivé et que vos base sont présente désactiver-le et actualiser
+
+Pour désinstaler le module sans détruire les base, supprimer les fichiers magalerie/sql/*
+
+Si la base est détruite, installer en conservant vos images et reprendre la procedure de mise en route.
+La base sera identique a la précédente mais sans les commentaires.
+
+Dans la plupart des cas.
+Ecraser simplement les fichiers et actualiser le module.
+
+
+IMPORTANT! verifier si les nouvelles vignettes créer sont grises dans ce cas renommer les fichiers:
+
+racine/modules/magalerie/functions.php en racine/modules/magalerie/functions.php-old
+et
+racine/modules/magalerie/functions.php.dist en racine/modules/magalerie/functions.php
+

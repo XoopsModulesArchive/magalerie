@@ -1,0 +1,59 @@
+<b>
+<a href="index.php"><{$lang_index}>: </a>
+<{$retour_galerie}>
+</b>
+<p align="center">
+<{$prec_file}>
+&nbsp;&nbsp;&nbsp;
+<{$index_cat}>
+&nbsp;&nbsp;&nbsp;
+<{$suiv_file}>
+</p>
+<p align="center"><{$image_file}></p>
+<p align="center">
+<{$prec_file}>
+&nbsp;&nbsp;&nbsp;
+<{$index_cat}>
+&nbsp;&nbsp;&nbsp;
+<{$suiv_file}>
+</p>
+
+
+<table align="center" style="width:450px" class="outer">
+<tr>
+<td colspan=2 class="even">
+
+<div style="padding:5px"><{$description}></div>
+<b><{$lang_mg_poster}></b><{$lien_poster}>
+</td>
+</tr>
+<tr>
+<td class="even"><b><{$nom_image}></b>: <{$nameof_image}></td>
+<td class="even"><b><{$lang_nb_clics}><{$lang_plus}>:</b> <{$nb_clics}> &nbsp; <{$populaire}></td>
+</tr>
+<tr>
+<td class="even"><b><{$lang_format}>:</b> <{$size_format}></td>
+<td class="even"><b><{$lang_rate}><{$plus_rate}>:</b> <{$nb_rate}> &nbsp; <{$img_rank}></td>
+</tr>
+<tr>
+<td class="even"><b><{$lang_cat}>:</b> <{$path_cat}></td>
+<td class="even">&nbsp; &nbsp;<{$popup_ico}> &nbsp; <{$ecard_ico}></td>
+</tr>
+</table>
+
+<div align="center"><{$vote_from}><{$nb_comment}></div>
+<div style="text-align: center; padding: 3px; margin:3px;">
+ <{$commentsnav}>
+ <{$lang_notice}>
+</div>
+<div style="margin:3px; padding: 3px;">
+<!-- start comments loop -->
+<{if $comment_mode == "flat"}>
+  <{include file="db:system_comments_flat.html"}>
+<{elseif $comment_mode == "thread"}>
+  <{include file="db:system_comments_thread.html"}>
+<{elseif $comment_mode == "nest"}>
+  <{include file="db:system_comments_nest.html"}>
+<{/if}>
+<!-- end comments loop -->
+</div>

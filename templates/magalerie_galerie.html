@@ -1,0 +1,27 @@
+<table width="100%" style=" border: 1px solid silver">
+<tr>
+<td style="padding:4px">
+<{$barre_titre}><br><br>
+
+<{$nomb_souscat}><b><{$ajoutimage}></b>
+</td>
+<td align="right" style="padding:4px"><{$barre_navig}></td>
+</tr></table>
+<p align="center">
+<{$barre_order}><br>
+<{$lang_ordre}><br> 
+<{$pagenav}></p>
+
+<table width="100%"  style=" margin:0px"><tr>
+
+<{section name=i loop=$file}> 
+<{include file="db:magalerie_galerie_skyn.html" done=$file[i]}> 
+<{/section}>
+
+<{if $pagenav == ''}>
+</tr></table>
+<{else}>
+</td></tr></table>
+<br><div align="center"><{$pagenav}></div><br>
+<{/if}>
+<p align="right"><{$footer}></p>

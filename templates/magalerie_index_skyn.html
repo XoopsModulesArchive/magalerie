@@ -1,0 +1,43 @@
+<{if $colonne == 1}>
+<td style="vertical-align: top; padding: 0px;">
+<{/if}>
+<{if $colonne ==2}>
+<td width="50%" style="vertical-align: top; padding: 0px;">
+<{/if}>
+
+<{if $colonne == 3}>
+<td width="33%" style="vertical-align: top; padding: 0px;">
+<{/if}>
+
+<!--
+debut de la partie skinable
+// -->
+
+
+<table width="100%" style="border : 1px solid silver; margin: 0px">
+<tr>
+<td width="<{$done.td}>" align="center" rowspan="3" style="vertical-align: middle"><{$done.image}></td>
+<td height="25" style="vertical-align: middle">
+<{$done.cat}><br>
+</td></tr><tr>
+<td style="vertical-align:top">
+<{$done.descript}>
+</td></tr><tr>
+<td style=" vertical-align: bottom;">
+<div align="center"><{$done.nombsouscat}><div>
+<{$done.souscat}>
+<{$done.souscatindex}>
+</td>
+</tr>
+</table>
+<br>
+
+<!--
+fin de la partie skinable
+// -->
+</td>
+<{if $done.themecount == $colonne}>
+</tr><tr>
+<{else}>
+<td>&nbsp;</td>
+<{/if}>

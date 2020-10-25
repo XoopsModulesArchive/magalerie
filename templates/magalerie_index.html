@@ -1,0 +1,22 @@
+<table width="100%" style="border: 1px solid silver">
+<tr>
+<td>
+<{$barre_titre}><br><br>
+<{$result_gal}><{$nomb_souscat}><br><{$nomb_img}>
+</td>
+<td align="right"><{$barre_navig}></td>
+</tr></table>
+<p align="center"><{$pagenav}></p>
+<table width="100%"  style=" margin:0px"><tr>
+<{section name=i loop=$file}> 
+<{include file="db:magalerie_index_skyn.html" done=$file[i]}> 
+<{/section}>
+<{if $pagenav == ''}>
+</tr></table>
+<{else}>
+</td></tr></table>
+<br><div align="center"><{$pagenav}></div><br>
+<{/if}>
+
+<p align="right"><{$footer}></p>
+
